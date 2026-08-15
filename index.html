@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Boyy ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- SECRET BACK BUTTON -->
+<div class="secretBack" onclick="goBack()"></div>
+<!-- SLIDE 1 -->
+<div class="slide active" id="slide1">
+    <h1>🎂 Happy Birthday Thangoo❤️</h1>
+    <button onclick="nextSlide(2)">Next ➜</button>
+</div>
+
+<!-- SLIDE 2 -->
+<div class="slide" id="slide2">
+    <h1>From Cutee 💖</h1>
+    <button onclick="nextSlide(3)">Next ➜</button>
+</div>
+
+<!-- SLIDE 3 -->
+<div class="slide" id="slide3">
+    <h1>A Special Surprise Is Waiting... ✨</h1>
+    <button onclick="nextSlide(4)">Continue ❤️</button>
+</div>
+
+<!-- SLIDE 4 -->
+<div class="slide" id="slide4">
+    <h1>🔐 Enter Password</h1>
+    <input type="password" id="passwordInput">
+    <button onclick="checkPassword()">Unlock ❤️</button>
+</div>
+
+<!-- SLIDE 5 -->
+<div class="slide" id="slide5">
+    <h1>🎈 Pop Balloons To Continue</h1>
+    <p>Balloon Game Here 🎈</p>
+    <button onclick="nextSlide(6)">Next ➜</button>
+</div>
+
+<!-- SLIDE 6 -->
+<div class="slide" id="slide6">
+    <h1>🔍 Question 1</h1>
+    <p>Who loves you the most? ❤️</p>
+    <input id="answer1">
+    <button onclick="checkQuestion1()">Submit</button>
+</div>
+
+<!-- SLIDE 7 -->
+<div class="slide" id="slide7">
+    <h1>🔍 Question  2</h1>
+    <p>I proposed u on which date?</p>
+    <input id="answer2">
+    <button onclick="checkQuestion2()">Submit</button>
+</div>
+
+<!-- SLIDE 8 -->
+<div class="slide" id="slide8">
+    <h1>🔍 Question 3</h1>
+    <p>Our lucky numbers?</p>
+    <input id="answer3">
+    <button onclick="checkQuestion3()">Submit</button>
+</div>
+
+<!-- SLIDE 9 -->
+<div class="slide" id="slide9">
+    <h1>😍 Do You Love Meeee?</h1>
+
+    <button onclick="nextSlide(10)">
+        YES ❤️
+    </button>
+
+    <button id="noBtn">
+        NO 😜
+    </button>
+</div>
+
+<!-- PHOTO 1 -->
+<div class="slide" id="slide10">
+    <img src="photo/Photo1.jpg (2).jpg"350">
+    <h2>Our First Memory ❤️</h2>
+    <button onclick="nextSlide(11)">Next ➜</button>
+</div>
+
+<!-- PHOTO 2 -->
+<div class="slide" id="slide11">
+    <img src="photo/Photo2.jpg.jpg" width="350">
+    <h2>On my special day 😍</h2>
+    <button onclick="nextSlide(12)">Next ➜</button>
+</div>
+
+<!-- PHOTO 3 -->
+<div class="slide" id="slide12">
+    <img src="photo/Photo3.jpg.jpg" width="350">
+    <h2>My Favourite pic💖</h2>
+    <button onclick="nextSlide(13)">Next ➜</button>
+</div>
+
+<!-- PHOTO 4 -->
+<div class="slide" id="slide13">
+    <img src="photo/Photo4.jpg.jpg" width="350">
+    <h2>My Whole World ❤️</h2>
+    <button onclick="nextSlide(14)">Next ➜</button>
+</div>
+
+<!-- PHOTO 5 -->
+<div class="slide" id="slide14">
+    <img src="photo/Photo5.jpg.jpg" width="350">
+    <h2> You Mean Everything to Mee🌍❤️</h2>
+    <button onclick="nextSlide(15)">Next ➜</button>
+</div>
+
+<!-- LOVE LETTER -->
+<div class="slide" id="slide15">
+    <h1>💌 A Letter For You</h1>
+
+    <p>
+    Dear Karthiii,
+
+Happiest bornday to the besttt personn I ever mett in thizz worlddd🤍😘ni enaku frnd ha kedichathu ku na romba lucky ya feel pannuren da karthiii🖤enoda happiness sadness aprom enaku support ha en kuda ellam vishayathulium mey ni iruthu irukaa athukaga thanks da boyy🫶🥹😘epoium ipdi oru frnd ha na lose panna virumbalaa🙌ni en kuda epoium irukanumm athu tha en wishh 😌🤍athey mari epoium na irupenn 🙌yarr vanthalum seri yar ponalum serii na irupenn kadasiii varaa🫶un derams ni asaii pathathu elameyy unaku nadaknumm athuku ga epoium pray pannipenn 🙌💯🤍kandipa unaku oru supportive ha va irupenn😍ni happy ya irukanumm athu pothum enkauuu ni naichathu unaku pidichathu ellamey nadakumm🫶🖤🥹 ni epoium mey srichitee iruu happiee ya iruuu smile face oda pathaa alagaa irupaa🤍🕊so once again happpiee bornday da thangameyyy 🫶🤍😘
+
+    Forever Yours,
+
+    Sherin 💖
+    </p>
+
+    <button onclick="nextSlide(16)">
+        Open Gift 🎁
+    </button>
+</div>
+
+<!-- GIFT -->
+<div class="slide" id="slide16">
+    <h1>🎁 Your Gift</h1>
+    <button onclick="nextSlide(17)">
+        Open ❤️
+    </button>
+</div>
+
+<!-- FINAL -->
+<div class="slide" id="slide17">
+    <h1>🎆 Happy Birthday da paiyaaa ❤️</h1>
+    <p>
+    Thank you for being part of my life i wish all your dreams and goals comes true be happiee forever dearr.
+    I Love You Forever ❤️
+    </p>
+
+    <h1>💖 From your cute💖</h1>
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3.mpeg" type="audio/mp3">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
